@@ -15,9 +15,6 @@ env:
   
   DOCUMENT_METADATA_COPYRIGHT:  'CIP4 Organization, all rights reserved'
   DOCUMENT_METADATA_TITLE:      'Prepress to Conventional Printing ICS'
-  DOCUMENT_METADATA_SUBJECT:    'Prepress to Conventional Printing Interoperability Conformance Specification for JDF'
-  DOCUMENT_METADATA_AUTHOR:     'CIP4 Organization'
-  DOCUMENT_METADATA_KEYWORDS:   'Automation;CIM;CIP4;Graphic Arts;Graphics;Interface;Printing;Specification;Standard;Workflow;XML'
 
   BUILD_UTILITY_EXE: c:\actions-runner\_work\_tool\document-processing\document-processing.exe  
 
@@ -69,7 +66,7 @@ jobs:
           python ..\builder\scripts\specbuilder.py $env:CONFIG_FILE
           "$env:DOCUMENT_COVER_TITLE $env:DOCUMENT_VERSION $(${env:GITHUB_REF}.replace('refs/tags/',''))"
           "$env:DOCUMENT_COVER_TITLE"
-          "$env:DOCUMENT_VERSION $(${env:GITHUB_REF}.replace('refs/tags/',''))"
+          "Version $env:DOCUMENT_VERSION $(${env:GITHUB_REF}.replace('refs/tags/',''))"
           "$env:DOCUMENT_METADATA_TITLE $env:DOCUMENT_VERSION $(${env:GITHUB_REF}.replace('refs/tags/',''))"
           "$env:DOCUMENT_VERSION $(${env:GITHUB_REF}.replace('refs/tags/',''))"
           "$((Get-Date).ToString('MMMM yyyy')) $env:DOCUMENT_METADATA_COPYRIGHT"
