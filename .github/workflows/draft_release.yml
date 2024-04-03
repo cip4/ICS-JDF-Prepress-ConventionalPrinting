@@ -4,10 +4,10 @@
 
 name: Draft Release Build
 ## This section contains ALL variable specific for this project ##
-# The VERSION is the main release number i.e. 1.7 or 2.1
+# The VERSION is the main release number i.e. 1.8 or 2.1
 env:
   BUILD_NAME:           ICS-JDF-PP-CP
-  DOCUMENT_VERSION:     '1.7'
+  DOCUMENT_VERSION:     '1.8'
   DOCUMENT_COVER_TITLE: Prepress to Conventional Printing ICS
   CONFIG_FILE:          Build\ICS_JDF_Prepress_ConventionalPrinting.ini
   CONFLUENCE_ID:        '1560313992'
